@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test" preserve-order="true">
     <classes>
       <class name="com.qa.unitTest.LoginTest"/>
-       <class name="com.qa.unitTest.GetCustomerRecords"/>
+      <class name="com.qa.unitTest.GetCustomerRecords"/>
+      <class name="com.qa.unitTest.GetSpecificCustomerRecord"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -34,10 +34,10 @@ public class GetCustomerRecords extends BaseClass {
 		int totalRecords = JsonPath.read(respBody, "$.length()");
 		int randomNo = ThreadLocalRandom.current().nextInt(0, totalRecords);
 		
-		System.out.println("Total Record = "+totalRecords); 
+		//System.out.println("Total Record = "+totalRecords); 
 		
 		phoneNo = JsonPath.read(respBody, "$.["+randomNo+"].phone");
-		System.out.println(phoneNo);
+		//System.out.println(phoneNo);
 		
 		int respCode = resp.getStatusCode();
 		
