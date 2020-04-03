@@ -15,7 +15,7 @@ import io.restassured.specification.RequestSpecification;
 public class LoginTest extends BaseClass {
   public LoginTest() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 @Test
@@ -35,9 +35,9 @@ public class LoginTest extends BaseClass {
 
 		String respBody = resp.getBody().asString();
 		tokenId = JsonPath.read(respBody, "$.token");
-		System.out.println(tokenId);
+		//System.out.println(tokenId);
 	
-		Assert.assertEquals(statusCode,200,"Login API Failed");
+		Assert.assertEquals(statusCode, 200, "Login API Failed");
 	} catch (Exception e) {
 		
 		e.printStackTrace();
